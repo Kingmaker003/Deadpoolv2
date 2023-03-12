@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '3369707'))
+API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', 'aec1fd7abdfec322c426961a570ef336')
-BOT_TOKEN = environ.get('BOT_TOKEN', "1755036029:AAFs0NPwxDqCQVpDRECdT11EkJtWVGiOaQ0")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -32,7 +32,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://phoenix:phoenix061@cluster0.y46vf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "AMD_LinkZz")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
