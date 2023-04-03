@@ -1,11 +1,13 @@
 FROM python:3.10
+#.          👆👆
+#change 3.10 to 3.11.2 if you depolying heroku or koyeb
 
-WORKDIR /Evamaria
+WORKDIR /TamilanBotsz
 
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-COPY . .
+copy . .
 
 CMD ["python3", "bot.py"]
